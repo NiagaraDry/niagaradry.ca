@@ -18,12 +18,12 @@
 
 nav {
   padding: 8px;
-  background-color: hsla(90, 80%, 25%, 0.1);
+  background-color: hsla(120, 100%, 18%, 0.1);
   border-radius: 0 0 16px 16px;
-  box-shadow: 0 4px 30px hsla(2, 20%, 30%, 0.5);
+  box-shadow: 0 4px 30px hsla(0, 0%, 0%, 0.5);
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
-  border: 1px solid hsla(90, 80%, 25%, 0.2);
+  border: 1px solid hsla(120, 100%, 18%, 0.2);
 }
 
 body {
