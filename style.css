@@ -5,13 +5,12 @@
        url("fonts/S%26S-Amberosa-Sans-3.otf") format("opentype"), /* Most modern browsers */
        url("fonts/S%26S-Amberosa-Sans-3.woff2") format("woff2"), /* Super modern browsers */
        url("fonts/S%26S-Amberosa-Sans-3.woff") format("woff"), /* Pretty modern browsers */
-       url("fonts/S%26S-Amberosa-Sans-3.ttf") format("truetype"), /* Safari, Android, iOS */
-       url("fonts/S_S-Amberosa-Sans-3.svg") format("svg"); /* Old iOS */ 
+       url("fonts/S%26S-Amberosa-Sans-3.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal;
 }
     
 .logo {
   font-family: "S&S Amberosa Sans 3", Verdana;
-  font-size: 30pt;
+  font-size: 32pt;
 }
