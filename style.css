@@ -13,20 +13,20 @@
 .logo {
   font-family: "S&S Amberosa Sans 3", Verdana;
   font-size: 45pt;
-  color: hsl(30 50% 90%);
+  color: hsl(30, 50%, 90%);
 }
 
 nav {
   padding: 8px;
-  background: hsla(90 80% 25% 0.64);
+  background-color: hsla(90, 80%, 25%, 0.1);
   border-radius: 0 0 16px 16px;
-  box-shadow: 0 4px 30px hsla(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px hsla(2, 20%, 30%, 0.5);
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
-  border: 1px solid rgba(78, 173, 22, 0.99);
+  border: 1px solid hsla(90, 80%, 25%, 0.2);
 }
 
 body {
-  background-color: hsl(90 10% 25%);
+  background-color: hsl(90, 10%, 25%);
   margin: 0;
 }
