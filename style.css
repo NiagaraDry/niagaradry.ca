@@ -17,9 +17,7 @@
 }
 
 nav {
-  background-color: hsl(90 80% 25%);
   padding: 8px;
-  border-bottom: 4px solid hsl(90 80% 2%);
   background: hsla(90 80% 25% 0.64);
   border-radius: 0 0 16px 16px;
   box-shadow: 0 4px 30px hsla(0, 0, 0, 0.1);
