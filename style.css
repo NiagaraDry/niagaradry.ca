@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: hsl(0, 10%, 25%);
+  background-color: hsl(120, 30%, 20%);
   margin: 0;
 }
 
@@ -26,7 +26,7 @@ body {
   font-family: "S&S Amberosa Sans 3", Verdana;
   font-size: 45pt;
   color: hsla(120, 100%, 18%, 0.5);
-  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.3);
+  text-shadow: -1px -1px 0px hsla(120, 100%, 38%, 0.5), 1px 1px 0px hsla(120, 100%, 8%, 0.5);
 }
 
 nav {
@@ -37,7 +37,7 @@ nav {
   box-shadow: 0 4px 30px hsla(0, 0%, 0%, 0.5);
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
-  border-bottom: 6px outset hsla(120, 100%, 38%, 0.3);
-  border-left: 3px outset hsla(120, 100%, 78%, 0.3);
-  border-right: 3px outset hsla(120, 100%, 8%, 0.3);
+  border-bottom: 6px outset hsla(120, 100%, 18%, 0.5);
+  border-left: 4px outset hsla(120, 100%, 28%, 0.5);
+  border-right: 4px outset hsla(120, 100%, 8%, 0.5);
 }
