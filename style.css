@@ -19,7 +19,13 @@
 nav {
   background-color: hsl(90 80% 25%);
   padding: 8px;
-  border-bottom: 4px solid hsl(90 80% 2%)
+  border-bottom: 4px solid hsl(90 80% 2%);
+  background: hsla(90 80% 25% 0.64);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px hsla(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(78, 173, 22, 0.99);
 }
 
 body {
