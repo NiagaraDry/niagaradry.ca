@@ -30,6 +30,7 @@ body {
 }
 
 nav {
+  text-align: center;
   padding: 8px;
   background-color: hsla(120, 100%, 18%, 0.5);
   border-radius: 0 0 16px 16px;
