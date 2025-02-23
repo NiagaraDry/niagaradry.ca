@@ -1,3 +1,8 @@
+:root {
+  --lemolime-green: hsl(134, 35%, 30%);
+  --gingerbeer-yellow: hsl(42, 66%, 54%);
+} 
+
 @font-face {
   font-family: "S&S Amberosa Sans 3";
   src: url("fonts/S%26S-Amberosa-Sans-3.eot"); /* IE9 */
