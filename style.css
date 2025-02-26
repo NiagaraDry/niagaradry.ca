@@ -107,6 +107,9 @@ nav {
         -webkit-column-count: 1;
         column-count: 1;
     }
+    .item {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 361px) and (max-width: 768px){
