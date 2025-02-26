@@ -63,11 +63,12 @@ nav {
   -webkit-column-gap: 1.5em;
   column-gap: 1.5em;
   font-size: .85em;
+  width: 50%;
+  margin: 10px auto;
 }
 
 .item {
     display: inline-block;
-    background: #fff;
     padding: 1em;
     margin: 0 0 1.5em;
     width: 100%;
@@ -75,7 +76,24 @@ nav {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc;
+    box-shadow: 2px 2px 4px 0 #000;
+  background-color: hsl(120, 100%, 10%);
+  border: 2px outset hsl(120, 100%, 8%);
+  border-radius: 8px;
+}
+
+.label {
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: Verdana;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background: hsl(120, 30%, 30%);
+  border: 2px outset hsl(120, 30%, 5%);
+  color: hsl(30, 50%, 90%);
 }
 
 .item img {
