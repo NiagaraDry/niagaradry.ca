@@ -100,6 +100,7 @@ nav {
   max-width: 100%;
 }
 
+/* responsive stuff */
 @media only screen and (max-width: 320px) {
     .masonry {
         -moz-column-count: 1;
