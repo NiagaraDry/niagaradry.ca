@@ -1,70 +1,64 @@
 :root {
-  --lemolime-green: hsl(134, 35%, 30%);
-  --gingerbeer-yellow: hsl(42, 66%, 54%);
-} 
+    --lemolime-green: hsl(134, 35%, 30%);
+    --gingerbeer-yellow: hsl(42, 66%, 54%);
+}
 
 @font-face {
-  font-family: "S&S Amberosa Sans 3";
-  src: url("fonts/S%26S-Amberosa-Sans-3.eot"); /* IE9 */
-  src: url("fonts/S%26S-Amberosa-Sans-3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("fonts/S%26S-Amberosa-Sans-3.otf") format("opentype"), /* Most modern browsers */
-       url("fonts/S%26S-Amberosa-Sans-3.woff2") format("woff2"), /* Super modern browsers */
-       url("fonts/S%26S-Amberosa-Sans-3.woff") format("woff"), /* Pretty modern browsers */
-       url("fonts/S%26S-Amberosa-Sans-3.ttf") format("truetype"); /* Safari, Android, iOS */
-  font-weight: normal;
-  font-style: normal;
+    font-family: "S&S Amberosa Sans 3";
+    src: url("fonts/S%26S-Amberosa-Sans-3.eot");
+    /* IE9 */
+    src: url("fonts/S%26S-Amberosa-Sans-3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("fonts/S%26S-Amberosa-Sans-3.otf") format("opentype"), /* Most modern browsers */
+         url("fonts/S%26S-Amberosa-Sans-3.woff2") format("woff2"), /* Super modern browsers */
+         url("fonts/S%26S-Amberosa-Sans-3.woff") format("woff"), /* Pretty modern browsers */
+         url("fonts/S%26S-Amberosa-Sans-3.ttf") format("truetype"); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-  background-color: hsl(120, 30%, 20%);
-  margin: 0;
+    background-color: hsl(120, 30%, 20%);
+    margin: 0;
 }
 
 .logo {
-  font-family: "S&S Amberosa Sans 3", Verdana;
-  font-size: 45pt;
-  color: hsl(30, 50%, 90%);
+    font-family: "S&S Amberosa Sans 3", Verdana;
+    font-size: 45pt;
+    color: hsl(30, 50%, 90%);
 }
 
 /* this is a test */
 .logotest {
-  font-family: "S&S Amberosa Sans 3", Verdana;
-  font-size: 45pt;
-  color: hsla(120, 100%, 18%, 0.5);
-  text-shadow: -1px -1px 0px hsla(120, 100%, 38%, 0.5), 1px 1px 0px hsla(120, 100%, 8%, 0.5);
+    font-family: "S&S Amberosa Sans 3", Verdana;
+    font-size: 45pt;
+    color: hsla(120, 100%, 18%, 0.5);
+    text-shadow: -1px -1px 0px hsla(120, 100%, 38%, 0.5), 1px 1px 0px hsla(120, 100%, 8%, 0.5);
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  text-align: center;
-  padding: 8px;
-  background-color: hsla(120, 100%, 18%, 0.5);
-  border-radius: 0 0 16px 16px;
-  box-shadow: 0 4px 30px hsla(0, 0%, 0%, 0.5);
-  backdrop-filter: blur(1.7px);
-  -webkit-backdrop-filter: blur(1.7px);
-  border-bottom: 6px outset hsla(120, 100%, 18%, 0.5);
-  border-left: 4px outset hsla(120, 100%, 28%, 0.5);
-  border-right: 4px outset hsla(120, 100%, 8%, 0.5);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    text-align: center;
+    padding: 8px;
+    background-color: hsla(120, 100%, 18%, 0.5);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 30px hsla(0, 0%, 0%, 0.5);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border-bottom: 6px outset hsla(120, 100%, 18%, 0.5);
+    border-left: 4px outset hsla(120, 100%, 28%, 0.5);
+    border-right: 4px outset hsla(120, 100%, 8%, 0.5);
 }
 
 .masonry {
-  -webkit-column-count: 4;
-  -moz-column-count:4;
-  column-count: 4;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-  margin: 1.5em;
-  padding: 0;
-  -moz-column-gap: 1.5em;
-  -webkit-column-gap: 1.5em;
-  column-gap: 1.5em;
-  font-size: .85em;
-  width: 50%;
-  margin: 10px auto;
+    column-count: 4;
+    column-gap: 1em;
+    margin: 1.5em;
+    padding: 0;
+    font-size: .85em;
+    width: 100%;
+    margin: 10px auto;
 }
 
 .item {
@@ -72,64 +66,52 @@ nav {
     padding: 1em;
     margin: 0 0 1.5em;
     width: 100%;
-	-webkit-transition:1s ease all;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #000;
-  background-color: hsl(120, 100%, 10%);
-  border: 2px outset hsl(120, 100%, 8%);
-  border-radius: 8px;
+    box-shadow: 2px 2px 4px 0 hsla(0, 0%, 0%, 0.5);
+    background-color: hsl(120, 100%, 10%);
+    border: 2px outset hsl(120, 100%, 8%);
+    border-radius: 8px;
 }
 
 .label {
-  margin-bottom: 8px;
-  padding: 8px;
-  border-radius: 8px;
-  font-family: Verdana;
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1.5;
-  text-align: center;
-  background: hsl(120, 30%, 30%);
-  border: 2px outset hsl(120, 30%, 5%);
-  color: hsl(30, 50%, 90%);
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    background: hsl(120, 30%, 30%);
+    border: 2px outset hsl(120, 30%, 5%);
+    color: hsl(30, 50%, 90%);
 }
 
 .item img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* responsive stuff */
 @media only screen and (max-width: 360px) {
     .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
         column-count: 1;
-    }
-    .item {
-        width: 100%;
     }
 }
 
-@media only screen and (min-width: 361px) and (max-width: 768px){
+@media only screen and (min-width: 361px) and (max-width: 768px) {
     .masonry {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
         column-count: 2;
     }
 }
-@media only screen and (min-width: 769px) and (max-width: 1200px){
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     .masonry {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
         column-count: 3;
     }
 }
+
 @media only screen and (min-width: 1201px) {
     .masonry {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
         column-count: 4;
     }
 }
