@@ -83,11 +83,13 @@ nav {
     width: 25%;
     height: 25%;
     background: hsl(120, 30%, 30%);
+    overflow: auto;
 }
 
 .gallery figure img {
     width: 25%;
     height: 25%;
+    float: left;
 }
 
 .gallery figcaption {
