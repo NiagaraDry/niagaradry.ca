@@ -27,12 +27,12 @@
 .logo {
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1em;
-    vertical-align: middle;
+    vertical-align: sub;
     color: var(--white);
 }
 
 /* this is a test */
-.logotest {
+.logoSide {
     float: left;
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1.5em;
