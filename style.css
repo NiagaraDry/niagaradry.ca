@@ -13,13 +13,13 @@
 
 @font-face {
     font-family: "S&S Amberosa Sans 3";
-    src: url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.eot");
+    src: url("fonts/S%26S-Amberosa-Sans-3.eot");
     /* IE9 */
-    src: url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-         url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.otf") format("opentype"), /* Most modern browsers */
-         url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.woff2") format("woff2"), /* Super modern browsers */
-         url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.woff") format("woff"), /* Pretty modern browsers */
-         url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.ttf") format("truetype"); /* Safari, Android, iOS */
+    src: url("fonts/S%26S-Amberosa-Sans-3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("fonts/S%26S-Amberosa-Sans-3.otf") format("opentype"), /* Most modern browsers */
+         url("fonts/S%26S-Amberosa-Sans-3.woff2") format("woff2"), /* Super modern browsers */
+         url("fonts/S%26S-Amberosa-Sans-3.woff") format("woff"), /* Pretty modern browsers */
+         url("fonts/S%26S-Amberosa-Sans-3.ttf") format("truetype"); /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
 }
