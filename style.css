@@ -1,103 +1,637 @@
 :root {
+    --white: hsl(30, 50%, 90%);
+    --green10: hsl(100, 25%, 10%);
+    --green20: hsl(100, 25%, 20%);
+    --green30: hsl(100, 25%, 30%);
+    --green40: hsl(100, 25%, 40%);
+    --green50: hsl(100, 25%, 50%);
+    --green60: hsl(100, 25%, 60%);
+    --green70: hsl(100, 25%, 70%);
     --lemolime-green: hsl(134, 35%, 30%);
     --gingerbeer-yellow: hsl(42, 66%, 54%);
 }
 
 @font-face {
     font-family: "S&S Amberosa Sans 3";
-    src: url("fonts/S%26S-Amberosa-Sans-3.eot");
+    src: url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.eot");
     /* IE9 */
-    src: url("fonts/S%26S-Amberosa-Sans-3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-         url("fonts/S%26S-Amberosa-Sans-3.otf") format("opentype"), /* Most modern browsers */
-         url("fonts/S%26S-Amberosa-Sans-3.woff2") format("woff2"), /* Super modern browsers */
-         url("fonts/S%26S-Amberosa-Sans-3.woff") format("woff"), /* Pretty modern browsers */
-         url("fonts/S%26S-Amberosa-Sans-3.ttf") format("truetype"); /* Safari, Android, iOS */
+    src: url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.otf") format("opentype"), /* Most modern browsers */
+         url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.woff2") format("woff2"), /* Super modern browsers */
+         url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.woff") format("woff"), /* Pretty modern browsers */
+         url("https://github.com/NiagaraDry/niagaradry.ca/blob/main/fonts/S%26S-Amberosa-Sans-3.ttf") format("truetype"); /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
 }
 
-body {
-    background-color: hsl(120, 30%, 20%);
-}
-
 .logo {
     font-family: "S&S Amberosa Sans 3", Verdana;
-    font-size: 45pt;
-    color: hsl(30, 50%, 90%);
+    font-size: 1em;
+    vertical-align: middle;
+    color: var(--white);
 }
 
 /* this is a test */
 .logotest {
+    float: left;
     font-family: "S&S Amberosa Sans 3", Verdana;
-    font-size: 45pt;
-    color: hsla(120, 100%, 18%, 0.5);
-    text-shadow: -1px -1px 0px hsla(120, 100%, 38%, 0.5), 1px 1px 0px hsla(120, 100%, 8%, 0.5);
+    font-size: 1.5em;
+    
+    color: var(--white);
 }
 
-nav {
-    text-align: center;
-    padding: 8px;
-    background-color: var(--lemolime-green);
-    box-shadow: 0 4px 30px hsla(0, 0%, 0%, 0.5);
+html {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%
+    overflow-x: hidden;
 }
 
-.gallery {
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-.gallery figure {
-    width: 25%;
-    height: 25%;
-    background: hsl(120, 30%, 30%);
+body {
+    margin: 0;
+    background-color: var(--green60);
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.main {
+    background-color: var(--green60);
+    transition: margin-left .4s
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+img {
+    border-style: none;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+    margin: 0;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+textarea {
     overflow: auto;
 }
 
-.gallery figure img {
-    width: 25%;
-    height: 25%;
-    float: left;
+[type=checkbox],
+[type=radio] {
+    padding: 0;
 }
 
-.gallery figcaption {
-    margin-bottom: 8px;
-    padding: 8px;
-    font-family: Verdana;
-    font-size: 10px;
-    font-weight: bold;
-    line-height: 1.5;
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.wide {
+    letter-spacing: 4px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.topbar {
+    background-color: var(--green30);
+}
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    overflow: auto;
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: var(--green20);
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
     text-align: center;
-    background: hsl(120, 30%, 30%);
-    color: hsl(30, 50%, 90%);
+    cursor: pointer;
+    white-space: nowrap;
 }
 
-/* responsive stuff */
-@media only screen and (max-width: 360px) {
-.gallery figure {
-     width: 100%;
-}
-.gallery figure img {
-     width: 40%;
-}
-/*.gallery figcaption {
-     width: 40%;
-}*/
-
+.bar-block .logo {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 4px 8px 6px 8px;
+    text-align: center;
+    background-color: var(--green30);
+    border: 4px outset var(--green40);
 }
 
-@media only screen and (min-width: 361px) and (max-width: 768px) {
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    font-size: 0.9rem;
+}
+
+.container:after,
+.container:before,
+.row:after,
+.row:before,
+.row-padding:after,
+.row-padding:before,
+.cell-row:before,
+.cell-row:after,
+.clear:after,
+.clear:before,
+.bar:before,
+.bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    padding: 8px 16px;
+    top: 0;
+    font-size: 24px;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    z-index: 2;
+}
+
+.modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: hsl(0, 0%, 0%);
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.modal-content {
+    margin: auto;
+    background-color: transparent;
+    position: relative;
+    padding: 64px 0;
+    outline: 0;
+    width: 500px;
+    text-align: center;
+}
+
+.modal-content p {
+    background-color: var(--white);
+    width: 100%;
+    margin: 4px auto 0 auto;
+    padding: 4px 8px 0 8px;
+    border: 4px outset var(--green30);
+    border-radius: 4px;
+}
+
+.modal-content img {
+    border: 4px outset var(--green30);
+    border-radius: 4px;
+}
+
+.col.m4 {
+    width: 33.33333%;
+}
+
+.col {
+    float: left;
+    width: 100%;
+    max-height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.col img {
+    width: 15%;
+    border: 4px outset var(--green50);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle
+}
+
+nav .bar-item:hover {
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#caption {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.burgerButton {
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--white);
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 1.2;
     
+    background-color: var(--green40);
+    border: 4px outset var(--green50);
+    border-radius: 4px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-    
+.burgerButton:hover {
+    background-color: var(--green50);
+    border: 4px outset var(--green60);
 }
 
-@media only screen and (min-width: 1201px) {
+.closeButtonL {
+    width: 100%;
+    /*font-size: 1.4rem;*/
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--white);
+    /*text-align: center;*/
+    cursor: pointer;
+    white-space: nowrap;
     
+    background-color: var(--green30);
+    border: 4px outset var(--green40);
+    border-radius: 4px;
+}
+
+.closeButtonL:hover {
+    background-color: var(--green40);
+    border: 4px outset var(--green50);
+}
+
+.closeButton {
+  display: inline-block;
+  padding: 3px 10px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  
+  background-color: var(--green40);
+  border: 4px outset var(--green30);
+  border-radius: 4px;
+}
+
+.closeButton:hover {
+  border: 4px outset var(--green40);
+  background-color: var(--green50);
+}
+
+.animate-zoom {
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width:380px) {
+    .modal-content {
+        margin: 0 10px;
+        width: 300px !important;
+    }
+}
+
+@media (max-width:600px) {
+    .modal-content {
+        margin: 0 10px;
+        width: 500px;
+    }
+
+    .modal {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .modal-content {
+        width: 500px;
+    }
+
+    .modal {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width:993px) {
+    .modal-content {
+        width: 500px;
+    }
+
+    .hide-large {
+        display: none !important;
+    }
+
+    .sidebar.collapse {
+        display: block !important;
+    }
+}
+
+@media (max-width:992px) {
+    .sidebar.collapse {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
