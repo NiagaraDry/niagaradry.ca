@@ -12,45 +12,38 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Sidebar/menu -->
+
 <nav class="sidebar collapse" id="mySidebar">
+  <span class="logoSide">Niagara Dry Beverages</span>
   <div class="bar-block">
-    <span class="logoSide">Niagara Dry Beverages</span>
-    <a href="/index.html" onclick="closeNav()" class="bar-item">Home →</a> 
-    <a href="/spring-water-bottling-works.html" onclick="closeNav()" class="bar-item">Spring Water Bottling Works →</a> 
-    <a href="/niagara-dry.html" onclick="closeNav()" class="bar-item">Niagara Dry →</a> 
-    <a href="/sky-hy.html" onclick="closeNav()" class="bar-item">Sky-Hy →</a> 
-    <a href="/niagara-punch.html" onclick="closeNav()" class="bar-item">Niagara Punch →</a> 
+    <a href="/index.html" onclick="closeNav()" class="bar-item">Home →</a>
+    <a href="/spring-water-bottling-works.html" onclick="closeNav()" class="bar-item">Spring Water Bottling Works →</a>
+    <a href="/niagara-dry.html" onclick="closeNav()" class="bar-item">Niagara Dry →</a>
+    <a href="/sky-hy.html" onclick="closeNav()" class="bar-item">Sky-Hy →</a>
+    <a href="/niagara-punch.html" onclick="closeNav()" class="bar-item">Niagara Punch →</a>
+    <a href="/niagra-dry.html" onclick="closeNav()" class="bar-item">Niagra-Dry →</a>
     <a href="/target-ginger-ale.html" onclick="closeNav()" class="bar-item">Target Ginger Ale →</a>
   </div>
     <a href="javascript:void(0)" onclick="closeNav()" class="closeButtonL hide-large">Close Menu</a>
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="container topbar hide-large">
-  <a href="javascript:void(0)" class="burgerButton margin-right" onclick="openNav()">☰</a>
-  <span class="logo">Niagara Dry Beverages</span>
+<header class="container topbar">
+  <a href="javascript:void(0)" class="burgerButton margin-right hide-large" onclick="openNav()">☰</a>
+  <span class="logo hide-large">Niagara Dry Beverages</span>
 </header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
 <div class="overlay hide-large" onclick="closeNav()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
 <div class="main" style="margin-left:300px;">
-
-  <!-- Header -->
   <div class="container" id="showcase">
     <h1><b>Niagara Dry</b></h1>
       <p>This is example text.</p>
   </div>
-  
-  <!-- Photo grid (modal) -->
+
   <div class="row-padding">
     <div class="col">
       <img src="comingsoon.png" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
     </div>
   </div>
-  <!-- Modal for full size images on click-->
+
   <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="closeButton">×</span>
     <div class="modal-content animate-zoom padding-64">
@@ -58,8 +51,6 @@
       <p id="caption"></p>
     </div>
   </div>
-
-<!-- End page content -->
 </div>
 <script>
 function openNav() {
