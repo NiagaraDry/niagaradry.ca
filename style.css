@@ -33,12 +33,22 @@
 
 /* this is a test */
 .logoSide {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 4px 8px 0 8px;
+    text-align: center;
+    background-color: var(--green30);
+    border: 4px outset var(--green40);
+    border-radius: 4px;
     float: left;
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1.6em;
-    
     color: var(--white);
+    
 }
+
+
 
 html {
     box-sizing: border-box;
@@ -357,20 +367,9 @@ hr {
     white-space: nowrap;
 }
 
-.bar-block .logoSide {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 4px 8px 0 8px;
-    text-align: center;
-    background-color: var(--green30);
-    border: 4px outset var(--green40);
-    border-radius: 4px;
-}
-
 .bar-block .bar-item {
     width: 100%;
-    display: block;
+    display: inline-block;
     padding: 8px 16px;
     text-align: left;
     border: none;
@@ -401,6 +400,14 @@ hr {
     padding: 8px 16px;
     top: 0;
     font-size: 24px;
+}
+
+.container h1 {
+    font-size: 1em;
+}
+
+.container p {
+    font-size: 0.6em;
 }
 
 .overlay {
@@ -487,7 +494,9 @@ img {
 
 nav .bar-item:hover {
     background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 4px;
 }
+
 nav a {
     text-decoration: none;
     color: var(--white);
@@ -523,17 +532,15 @@ nav a {
 
 .closeButtonL {
     width: 100%;
-    /*font-size: 1.4rem;*/
     display: inline-block;
     padding: 8px 16px;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
     color: var(--white);
-    /*text-align: center;*/
     cursor: pointer;
     white-space: nowrap;
-    
+    margin-top: 10px;
     background-color: var(--green30);
     border: 4px outset var(--green40);
     border-radius: 4px;
