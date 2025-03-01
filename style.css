@@ -24,6 +24,12 @@
     font-style: normal;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 .logo {
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1.4em;
@@ -31,7 +37,6 @@
     color: var(--white);
 }
 
-/* this is a test */
 .logoSide {
     display: block;
     width: 100%;
@@ -44,11 +49,8 @@
     float: left;
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1.6em;
-    color: var(--white);
-    
+    color: var(--white);    
 }
-
-
 
 html {
     box-sizing: border-box;
@@ -61,25 +63,22 @@ html {
     overflow-x: hidden;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 body {
     margin: 0;
-    background-color: var(--green60);
+    background: var(--green60);
+    background: linear-gradient(0deg, var(--green60) 0%, var(--green40) 100%);
     font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
 }
 
 .main {
-    background-color: var(--green60);
+    background: var(--green60);
+    background: linear-gradient(0deg, var(--green60) 0%, var(--green40) 100%);
     transition: margin-left .4s
 }
 
+/* Begin HTML5 resets */
 article,
 aside,
 details,
@@ -337,6 +336,7 @@ hr {
     border-top: 1px solid #eee;
     margin: 20px 0;
 }
+/* End of HTML5 resets */
 
 .topbar {
     background-color: var(--green30);
