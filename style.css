@@ -1,5 +1,7 @@
 :root {
     --white: hsl(30, 50%, 90%);
+    
+    /* Greens */
     --green10: hsl(100, 25%, 10%);
     --green20: hsl(100, 25%, 20%);
     --green30: hsl(100, 25%, 30%);
@@ -7,8 +9,15 @@
     --green50: hsl(100, 25%, 50%);
     --green60: hsl(100, 25%, 60%);
     --green70: hsl(100, 25%, 70%);
-    --lemolime-green: hsl(134, 35%, 30%);
-    --gingerbeer-yellow: hsl(42, 66%, 54%);
+    
+    /* Reds */
+    --red10: hsl(10, 45%, 10%);
+    --red20: hsl(10, 45%, 20%);
+    --red30: hsl(10, 45%, 30%);
+    --red40: hsl(10, 45%, 40%);
+    --red50: hsl(10, 45%, 50%);
+    --red60: hsl(10, 45%, 60%);
+    --red70: hsl(10, 45%, 70%);
 }
 
 @font-face {
@@ -24,12 +33,6 @@
     font-style: normal;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 .logo {
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1.4em;
@@ -37,6 +40,7 @@
     color: var(--white);
 }
 
+/* this is a test */
 .logoSide {
     display: block;
     width: 100%;
@@ -49,8 +53,11 @@
     float: left;
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1.6em;
-    color: var(--white);    
+    color: var(--white);
+    
 }
+
+
 
 html {
     box-sizing: border-box;
@@ -63,22 +70,25 @@ html {
     overflow-x: hidden;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
-    background: var(--green60);
-    background: linear-gradient(0deg, var(--green60) 0%, var(--green40) 100%);
+    background-color: var(--green60);
     font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
 }
 
 .main {
-    background: var(--green60);
-    background: linear-gradient(0deg, var(--green60) 0%, var(--green40) 100%);
+    background-color: var(--green60);
     transition: margin-left .4s
 }
 
-/* Begin HTML5 resets */
 article,
 aside,
 details,
@@ -336,10 +346,10 @@ hr {
     border-top: 1px solid #eee;
     margin: 20px 0;
 }
-/* End of HTML5 resets */
 
 .topbar {
     background-color: var(--green30);
+    height: 74px;
 }
 .sidebar {
     height: 100%;
@@ -404,6 +414,12 @@ hr {
 
 .container h1 {
     font-size: 1em;
+    font-weight: bolder;
+}
+
+.container h2 {
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 .container p {
@@ -493,7 +509,14 @@ img {
 }
 
 nav .bar-item:hover {
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: var(--green10);
+    border-radius: 4px;
+    color: white;
+}
+
+.active {
+    background-color: var(--green40);
+    color: black;
     border-radius: 4px;
 }
 
@@ -518,7 +541,7 @@ nav a {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
-    line-height: 1.2;
+    /*line-height: 1.2;*/
     
     background-color: var(--green40);
     border: 4px outset var(--green50);
@@ -541,14 +564,14 @@ nav a {
     cursor: pointer;
     white-space: nowrap;
     margin-top: 10px;
-    background-color: var(--green30);
-    border: 4px outset var(--green40);
+    background-color: var(--red30);
+    border: 4px outset var(--red40);
     border-radius: 4px;
 }
 
 .closeButtonL:hover {
-    background-color: var(--green40);
-    border: 4px outset var(--green50);
+    background-color: var(--red40);
+    border: 4px outset var(--red50);
 }
 
 .closeButton {
@@ -562,19 +585,19 @@ nav a {
   cursor: pointer;
   white-space: nowrap;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
   font-size: 1.5rem;
   font-weight: bolder;
   
-  background-color: var(--green40);
-  border: 4px outset var(--green30);
+  background-color: var(--red30);
+  border: 4px outset var(--red40);
   border-radius: 4px;
 }
 
 .closeButton:hover {
-  border: 4px outset var(--green40);
-  background-color: var(--green50);
+  background-color: var(--red40);
+  border: 4px outset var(--red50);
 }
 
 .animate-zoom {
@@ -600,12 +623,14 @@ nav a {
 
 @media (max-width:600px) {
     .modal-content {
-        margin: 0 10px;
+        margin: 10px auto 0 auto;
         width: 500px;
     }
-
     .modal {
         padding-top: 30px;
+    }
+    .col img {
+        width: 30%;  
     }
 }
 
