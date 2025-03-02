@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Main tags -->
   <meta charset="utf-8">
-  <title>Niagara Dry Beverages</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NiagaraDry.ca</title>
   <meta name="description" content="A collector-run historical archive of everything to do with Niagara Dry Beverages.">
+
+  <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <link rel="manifest" href="icons/site.webmanifest">
+
+  <!--  Essential META Tags -->
+  <meta name="theme-color" content="#466039">
+  <meta property="og:title" content="NiagaraDry.ca">
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="icons/thumbnail.jpg">
+  <meta property="og:url" content="https://niagaradry.ca">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!--  Non-Essential, But Recommended -->
+  <meta property="og:description" content="A collector-run historical archive of everything to do with Niagara Dry Beverages.">
+  <meta property="og:site_name" content="NiagaraDry.ca">
+  <meta name="twitter:image:alt" content="A picture of the original Niagara Dry Beverages bottling plant in Niagara Falls, Ontario, Canada">
+
+  <!--  Non-Essential, But Required for Analytics -->
+  <meta name="twitter:site" content="@NiagaraDry">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -32,41 +53,75 @@
 </header>
 <div class="overlay hide-large" onclick="closeNav()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
 <div class="main" style="margin-left:300px;">
-  <div class="container" id="showcase">
+  <div class="container" id="bottlecaps">
     <h1>Sky-Hy</h1>
-      <p>This is example text.</p>
+      <p>This page contains Sky-Hy items. TODO: Write-up about Sky-Hy here.</p>
       <h2>Bottle Caps</h2>
+      <p>Sky-Hy went through numerous designs for their bottle caps. Designs include:
+      <ul>
+        <li><b>Standard:</b> A standard design with "Sky-Hy Beverages Registered" and an airplane.</li>
+        <li><b>Variant 1:</b> Flavor-specific designs in blue/white, with white text for the flavor names and "Canada's Finest" written on the lower half of the cap.</li>
+        <li><b>Variant 2:</b> Flavor-specific designs in blue/white, with colored text for the flavor names and "Canada's Finest" written on the lower half of the cap.</li>
+        <li><b>Variant 3:</b> Flavor-specific designs in blue/white, with colored text for the flavor names and "Canada's Finest" written on the lower half of the cap inside a detailed map of Canada.</li>
+        <li><b>Variant 4:</b> Flavor-specific designs in blue/white, with white text for the flavor name(s) and "Canada's Finest" written on the lower half of the cap in white text with a dark background.</li>
+        <li><b>Variant 5:</b> A (possibly flavor-specific) design in silver/red with the flavor name in the red half. <i>I've only seen this cap in Cream Soda</i>.</li>
+      </ul>
+      </p>
   </div>
 
   <div class="row-padding">
     <div class="col">
-      <img src="images/skyhy/cap1.jpg" onclick="onClick(this)" alt="Root Beer cap with Canada's Finest lower">
-      <img src="images/skyhy/cap2.jpg" onclick="onClick(this)" alt="Orange cap<br>Colored name">
-      <img src="images/skyhy/cap3.jpg" onclick="onClick(this)" alt="Orange cap<br>Non-colored name">
-      <img src="images/skyhy/cap5.webp" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap6.webp" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap7.jpg" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap9.jpg" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap10.jpg" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap8.jpg" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap11.webp" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap12.webp" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap13.webp" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap14.webp" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/cap15.webp" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/variouscaps1.jpg" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
-      <img src="images/skyhy/variouscaps2.jpg" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap4.jpg" onclick="onClick(this)" alt="Standard Red Sky-Hy cap, flavor unknown">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap19.png" onclick="onClick(this)" alt="Standard Blue Sky-Hy cap, flavor unknown">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap1.jpg" onclick="onClick(this)" alt="Variant 1 Root Beer cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap17.png" onclick="onClick(this)" alt="Variant 2 Root Beer cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap16.png" onclick="onClick(this)" alt="Variant 4 Cream Soda cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap18.png" onclick="onClick(this)" alt="Variant 3 Orange cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap20.png" onclick="onClick(this)" alt="Variant 2 Lemon-Lime cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap2.jpg" onclick="onClick(this)" alt="Variant 2 Orange cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap3.jpg" onclick="onClick(this)" alt="Variant 1 Orange cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap5.webp" onclick="onClick(this)" alt="Variant 5 Cream Soda cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap6.webp" onclick="onClick(this)" alt="Variant 5 Cream Soda cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap7.jpg" onclick="onClick(this)" alt="Variant 2 Ginger Ale cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap9.jpg" onclick="onClick(this)" alt="Variant 2 Ginger Ale cap, side view">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap10.jpg" onclick="onClick(this)" alt="Variant 3 Lemon-Lime cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap8.jpg" onclick="onClick(this)" alt="Variant 3 Lemon-Lime cap, side view">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap12.webp" onclick="onClick(this)" alt="Variant 5 Cream Soda cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap11.webp" onclick="onClick(this)" alt="Variant 5 Cream Soda cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap13.webp" onclick="onClick(this)" alt="Variant 1 Orange cap">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap14.webp" onclick="onClick(this)" alt="Variant 1 Orange cap, side view #1">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/cap15.webp" onclick="onClick(this)" alt="Variant 1 Orange cap, side view #2">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/variouscaps1.jpg" onclick="onClick(this)" alt="Several Sky-Hy caps amongst other caps, this image is where some earlier images were cropped from">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/variouscaps2.jpg" onclick="onClick(this)" alt="Several Sky-Hy caps amongst other caps, this image is where some earlier images were cropped from">
     </div>
   </div>
     
-  <div class="container" id="showcase">
+  <div class="container" id="labels">
     <h2>Labels</h2>
-      <p>This is example text.</p>
+      <p>Much like the bottle caps, the labels also had several variants:
+        <ul>
+          <li><b>Variant 1:</b> Features the flavor, "Canada's Finest" text in blue, and "Niagara Dry Beverages" in yellow along the bottom.</li>
+          <li><b>Variant 2:</b> Features the flavor, "Canada's Finest" text in blue, and "Niagara Dry Beverages - Niagara Falls, Ont." in yellow along the bottom.</li>
+          <li><b>Variant 3:</b> Features the flavor, "Canada's Finest" text in yellow over top of a colorful map of Canada, and "Niagara Dry Beverages - Niagara Falls, Ont." in yellow along the bottom.</li>
+        </ul>
+      </p>
   </div>
 
+  <div class="container"><p>Click on an image to enlarge it!</p></div>
   <div class="row-padding">
     <div class="col">
-      <img src="comingsoon.png" onclick="onClick(this)" alt="Niagara Dry<br>12oz Ginger Ale label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/SkyHiGingerAle-12oz.png" onclick="onClick(this)" alt="12oz Ginger Ale Variant 1 label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/SkyHyGingerAle-30oz.png" onclick="onClick(this)" alt="30oz Ginger Ale Variant 1 label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/SkyHyCreamSoda-30oz.png" onclick="onClick(this)" alt="30oz Cream Soda Variant 1 label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/label-gingerale1.jpg" onclick="onClick(this)" alt="30oz Ginger Ale Variant 3 label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/label-lemolime1.jpg" onclick="onClick(this)" alt="30oz Lemo-Lime Variant 3 label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/label-orange1.jpg" onclick="onClick(this)" alt="30oz Orange Variant 3 label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/label-orange2.JPG" onclick="onClick(this)" alt="30oz Orange Variant 3 label in terrible shape">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/label-rootbeer1.jpg" onclick="onClick(this)" alt="30oz Root Beer Variant 3 label">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/labels-tim2.jpg" onclick="onClick(this)" alt="Full view of a sheet of Variant 2 Root Beer labels from Tim Maitland">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/labels-tim3.jpg" onclick="onClick(this)" alt="Cropped view of a sheet of Variant 2 Root Beer labels from Tim Maitland">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/labels-tim1.jpg" onclick="onClick(this)" alt="Information from the back of a sheet of Variant 2 Root Beer labels from Tim Maitland">
+      <img src="https://raw.githubusercontent.com/NiagaraDry/niagaradry.ca/refs/heads/main/images/skyhy/labels-tpl-lr.jpg" onclick="onClick(this)" alt="Cropped view of a sheet of Variant 2 Ginger Ale, Root Beer, Orange and Lemo-Lime labels from the Toronto Public Library<br><b><a href='https://github.com/NiagaraDry/niagaradry.ca/blob/main/images/skyhy/labels-tpl-hr.jpg' target='_blank'>Click here to view the full-sized (5,411 x 7,215, 10.0MB) image</a></b>">
     </div>
   </div>
 
