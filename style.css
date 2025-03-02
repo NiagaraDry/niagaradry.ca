@@ -78,7 +78,7 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(0deg, var(--green60) 0%, var(--green40) 100%);
+    background: linear-gradient(180deg, var(--green60) 0%, var(--green40) 100%);
     background-color: var(--green60);
     font-family: Verdana, sans-serif;
     font-size: 15px;
@@ -86,7 +86,7 @@ body {
 }
 
 .main {
-    background: linear-gradient(0deg, var(--green60) 0%, var(--green40) 100%);
+    background: linear-gradient(180deg, var(--green60) 0%, var(--green40) 100%);
     background-color: var(--green60);
     transition: margin-left .4s
 }
