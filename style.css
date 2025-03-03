@@ -167,6 +167,7 @@ body {
     float: none;
     outline: 0;
     font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .container:after, .container:before,
@@ -285,6 +286,7 @@ li {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .col img {
