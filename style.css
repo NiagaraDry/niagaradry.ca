@@ -223,7 +223,7 @@ li {
 .modal {
     z-index: 3;
     display: none;
-    padding-top: 100px;
+    /*padding-top: 50px;*/
     position: fixed;
     left: 0;
     top: 0;
@@ -240,15 +240,15 @@ li {
     position: relative;
     padding: 64px 0;
     outline: 0;
-    width: 500px;
+    width: 80%;
     text-align: center;
 }
 
 .modal-content p {
     background-color: var(--white);
-    width: 100%;
-    margin: 4px auto 0 auto;
-    padding: 4px 8px 0 8px;
+    width: 500px;
+    margin: 0 auto 4px auto;
+    padding: 4px 8px 2px 8px;
     border: 4px outset var(--green30);
     border-radius: 4px;
 }
@@ -392,7 +392,6 @@ nav a {
     from {
         transform: scale(0);
     }
-
     to {
         transform: scale(1);
     }
@@ -401,7 +400,10 @@ nav a {
 /* Media Queries */
 @media (max-width:380px) {
     .modal-content {
-        margin: 0 10px;
+        margin: 10px auto 0 auto;
+        width: 300px !important;
+    }
+    .modal-content p {
         width: 300px !important;
     }
 }
@@ -409,7 +411,10 @@ nav a {
 @media (max-width:600px) {
     .modal-content {
         margin: 10px auto 0 auto;
-        width: 500px;
+        width: 300px;
+    }
+    .modal-content p {
+        width: 300px;
     }
     .modal {
         padding-top: 30px;
@@ -421,23 +426,27 @@ nav a {
 
 @media (max-width:768px) {
     .modal-content {
-        width: 500px;
+        margin: 10px auto 0 auto;
+        width: 400px;
     }
-
+    .modal-content p {
+        width: 400px;
+    }
     .modal {
-        padding-top: 50px;
+        padding-top: 10px;
     }
 }
 
 @media (min-width:993px) {
     .modal-content {
-        width: 500px;
+        width: 80%;
     }
-
+    .modal-content p {
+        width: 800px;
+    }
     .hide-large {
         display: none !important;
     }
-
     .sidebar.collapse {
         display: block !important;
     }
@@ -447,7 +456,6 @@ nav a {
     .sidebar.collapse {
         display: none;
     }
-
     .main {
         margin-left: 0 !important;
         margin-right: 0 !important;
