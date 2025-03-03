@@ -1,5 +1,6 @@
 :root {
     --white: hsl(30, 50%, 90%);
+    --overlay: hsla(0, 0%, 0%, 0.7);
     
     /* Greens */
     --green10: hsl(100, 25%, 10%);
@@ -216,7 +217,8 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: hsl(0, 0%, 0%); /* Fallback in case browser doesn't support transparency */
+    background-color: var(--overlay);
     z-index: 2;
 }
 
@@ -230,8 +232,8 @@ li {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: hsl(0, 0%, 0%);
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: hsl(0, 0%, 0%); /* Fallback in case browser doesn't support transparency */
+    background-color: var(--overlay);
 }
 
 .modal-content {
@@ -245,12 +247,25 @@ li {
 }
 
 .modal-content p {
-    background-color: var(--white);
+    background-color: var(--green40);
     width: 500px;
     margin: 0 auto 4px auto;
     padding: 4px 8px 2px 8px;
     border: 4px outset var(--green30);
     border-radius: 4px;
+    font-weight: bold;
+    color: var(--white);
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.7);
+}
+
+.modal-content p a {
+    text-decoration: none;
+    color: hsl(200, 100%, 70%);
+}
+
+.modal-content p a:hover {
+    text-decoration: none;
+    color: hsl(200, 100%, 60%);
 }
 
 .modal-content img {
