@@ -383,20 +383,6 @@ nav a {
   border: 4px outset var(--red50);
 }
 
-/* Animations */
-.animate-zoom {
-    animation: animatezoom 0.6s;
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
 /* Media Queries */
 @media (max-width:380px) {
     .modal-content {
