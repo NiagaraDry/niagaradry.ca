@@ -31,6 +31,9 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- JS -->
+  <script type="text/javascript" src="niagaradry.js"></script>
 </head>
 <body>
 <nav class="sidebar collapse" id="mySidebar">
@@ -44,6 +47,8 @@
     <a href="/niagara-punch.html" onclick="closeNav()" class="bar-item">Niagara Punch →</a>
     <a href="/niagra-dry.html" onclick="closeNav()" class="bar-item">Niagra-Dry →</a>
     <a href="/target-ginger-ale.html" onclick="closeNav()" class="bar-item active">Target Ginger Ale →</a>
+    <a href="/collection-gallery.html" onclick="closeNav()" class="bar-item">Collection Gallery →</a>
+    <a href="/contact.html" onclick="closeNav()" class="bar-item">Contact Us →</a>
   </div>
     <a href="javascript:void(0)" onclick="closeNav()" class="closeButtonL hide-large">Close Menu</a>
 </nav>
@@ -78,24 +83,5 @@
     </div>
   </div>
 </div>
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
 </body>
 </html>
