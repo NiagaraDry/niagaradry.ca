@@ -273,7 +273,7 @@ li {
 }
 
 .col img {
-    width: 15%;
+    width: 10%;
     border: 4px outset var(--green50);
     border-radius: 4px;
     cursor: pointer;
