@@ -366,6 +366,7 @@ nav a {
     background-color: var(--red30);
     border: 4px outset var(--red40);
     border-radius: 4px;
+    font-weight: bold;
 }
 
 .closeButtonL:hover {
