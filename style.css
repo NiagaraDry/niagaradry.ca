@@ -154,12 +154,12 @@ body {
     padding: 4px 8px 0 8px;
     text-align: center;
     background-color: var(--white);
-    border: 6px solid var(--gold50);
+    border: 4px outset var(--gold50);
     border-radius: 4px;
     float: left;
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1.6em;
-    color: var(--white);   
+    color: var(--gold50);   
 }
 
 /* Generic button class */
