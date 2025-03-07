@@ -388,7 +388,7 @@ nav a {
 /* Image modal close button */
 .closeButton {
     display: inline-block;
-    padding: 3px 3px; /* was 3 10 */
+    padding: 3px 16px;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
