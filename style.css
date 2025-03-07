@@ -146,20 +146,19 @@ body {
     color: var(--white);
 }
 
-/* this is a test */
 .logoSide {
     display: block;
     width: 100%;
     margin-bottom: 10px;
     padding: 4px 8px 0 8px;
     text-align: center;
-    background-color: var(--white);
+    background-color: var(--green40);
     border: 4px outset var(--gold50);
     border-radius: 4px;
     float: left;
     font-family: "S&S Amberosa Sans 3", Verdana;
     font-size: 1.6em;
-    color: var(--gold50);   
+    color: var(--white);   
 }
 
 /* Generic button class */
@@ -246,7 +245,6 @@ li {
 .modal {
     z-index: 3;
     display: none;
-    /*padding-top: 50px;*/
     position: fixed;
     left: 0;
     top: 0;
@@ -359,15 +357,6 @@ nav a {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
-    /* background-color: var(--green50);
-    border: 6px solid var(--gold50);
-    border-radius: 4px;
-}
-
-
-.burgerButton:hover {
-    background-color: var(--green60);
-    border: 6px solid var(--gold60); */
 }
 
 /* Close Menu button */
