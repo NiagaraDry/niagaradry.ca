@@ -328,7 +328,7 @@ img {
 nav .bar-item:hover {
     background-color: var(--green20);
     border-radius: 4px;
-    color: white;
+    color: var(--white);
 }
 
 .active {
