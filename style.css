@@ -3,13 +3,22 @@
     --overlay: hsla(0, 0%, 0%, 0.7);
     
     /* Greens */
-    --green10: hsl(100, 25%, 10%);
-    --green20: hsl(100, 25%, 20%);
-    --green30: hsl(100, 25%, 30%);
-    --green40: hsl(100, 25%, 40%);
-    --green50: hsl(100, 25%, 50%);
-    --green60: hsl(100, 25%, 60%);
-    --green70: hsl(100, 25%, 70%);
+    --green10: hsl(168, 40%, 10%);
+    --green20: hsl(168, 40%, 20%);
+    --green30: hsl(168, 40%, 30%);
+    --green40: hsl(168, 40%, 40%);
+    --green50: hsl(168, 40%, 50%);
+    --green60: hsl(168, 40%, 60%);
+    --green70: hsl(168, 40%, 70%);
+
+    /* Golds */
+    --gold10: hsl(34, 40%, 10%);
+    --gold20: hsl(34, 40%, 20%);
+    --gold30: hsl(34, 40%, 30%);
+    --gold40: hsl(34, 40%, 40%);
+    --gold50: hsl(34, 40%, 50%);
+    --gold60: hsl(34, 40%, 60%);
+    --gold70: hsl(34, 40%, 70%);
     
     /* Reds */
     --red10: hsl(10, 45%, 10%);
@@ -104,6 +113,7 @@ body {
 .topbar {
     background-color: var(--green30);
     height: 74px;
+    border-bottom: 6px solid var(--gold50);
 }
 
 /* Side nav bar */
@@ -116,7 +126,8 @@ body {
     overflow: auto;
     padding: 8px 16px;
     font-size: 18px;
-    background-color: var(--green20);
+    background-color: var(--green30);
+    border-right: 6px solid var(--gold50);
 }
 
 .logo {
@@ -133,7 +144,7 @@ body {
     margin-bottom: 10px;
     padding: 4px 8px 0 8px;
     text-align: center;
-    background-color: var(--green30);
+    background-color: var(--green50);
     border: 4px outset var(--green40);
     border-radius: 4px;
     float: left;
@@ -248,11 +259,11 @@ li {
 }
 
 .modal-content p {
-    background-color: var(--green40);
+    background-color: var(--green50);
     width: 500px;
     margin: 0 auto 4px auto;
     padding: 4px 8px 2px 8px;
-    border: 4px outset var(--green30);
+    border: 4px outset var(--green40);
     border-radius: 4px;
     font-weight: bold;
     color: var(--white);
@@ -291,7 +302,7 @@ li {
 
 .col img {
     width: 10%;
-    border: 4px outset var(--green50);
+    border: 4px outset var(--green30);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -341,14 +352,14 @@ nav a {
     white-space: nowrap;
     /*line-height: 1.2;*/
     
-    background-color: var(--green40);
-    border: 4px outset var(--green50);
+    background-color: var(--green50);
+    border: 4px outset var(--green40);
     border-radius: 4px;
 }
 
 .burgerButton:hover {
     background-color: var(--green50);
-    border: 4px outset var(--green60);
+    border: 4px outset var(--green40);
 }
 
 /* Close Menu button */
@@ -363,15 +374,15 @@ nav a {
     cursor: pointer;
     white-space: nowrap;
     margin-top: 10px;
-    background-color: var(--red30);
-    border: 4px outset var(--red40);
+    background-color: var(--red40);
+    border: 4px outset var(--red30);
     border-radius: 4px;
     font-weight: bold;
 }
 
 .closeButtonL:hover {
-    background-color: var(--red40);
-    border: 4px outset var(--red50);
+    background-color: var(--red50);
+    border: 4px outset var(--red40);
 }
 
 /* Image modal close button */
@@ -391,14 +402,14 @@ nav a {
   font-size: 1.5rem;
   font-weight: bolder;
   
-  background-color: var(--red30);
-  border: 4px outset var(--red40);
+  background-color: var(--red40);
+  border: 4px outset var(--red30);
   border-radius: 4px;
 }
 
 .closeButton:hover {
-  background-color: var(--red40);
-  border: 4px outset var(--red50);
+  background-color: var(--red50);
+  border: 4px outset var(--red40);
 }
 
 /* Media Queries */
