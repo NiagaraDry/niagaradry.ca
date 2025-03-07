@@ -358,6 +358,7 @@ nav a {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    padding: 0 6px 6px 0;
 }
 
 /* Close Menu button */
