@@ -311,7 +311,7 @@ li {
 
 .col img {
     width: 10%;
-    border: 4px outeet var(--gold50);
+    border: 4px outset var(--gold50);
     border-radius: 4px;
     cursor: pointer;
 }
