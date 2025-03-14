@@ -10,18 +10,16 @@ function closeNav() {
 
 function onClick(element) {
 	/* Modified version for thumbnail support once it's ready */
-	/*
 	var url = element.src.replace("/min/" , "/full/");
 	document.getElementById("img01").src = url;
 	document.getElementById("modal01").style.display = "block";
 	var captionText = document.getElementById("caption");
 	captionText.innerHTML = element.alt;
-	*/
 
-	/* Original code below */
+	/* Original code below
 	var url = document.getElementById("img01").src;
 	document.getElementById("img01").src = element.src;
 	document.getElementById("modal01").style.display = "block";
 	var captionText = document.getElementById("caption");
-	captionText.innerHTML = element.alt;
+	captionText.innerHTML = element.alt; */
 }
