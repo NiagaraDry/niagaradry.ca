@@ -11,7 +11,7 @@ function closeNav() {
 function onClick(element) {
 	/* Modified version for thumbnail support once it's ready */
 	/*
-	var url = element.src.replace("images/min/" , "images/full/");
+	var url = element.src.replace("/min/" , "/full/");
 	document.getElementById("img01").src = url;
 	document.getElementById("modal01").style.display = "block";
 	var captionText = document.getElementById("caption");
