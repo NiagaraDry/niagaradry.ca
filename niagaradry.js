@@ -11,6 +11,8 @@ function closeNav() {
 function onClick(element) {
 	// Grab the src URL and use that as a lazy-loading background
 	var url = element.src;
+	document.getElementById("img01").style.backgroundSize = "cover";
+	document.getElementById("img01").style.backgroundRepeat = "norepeat";
 	document.getElementById("img01").style.backgroundImage = "url(" + url + ")";
 
 	// Do the rest of the shit
