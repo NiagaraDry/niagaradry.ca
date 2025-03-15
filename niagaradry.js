@@ -15,6 +15,8 @@ function onClick(element) {
 
 	// Do the rest of the shit
 	var urledit = element.src.replace("/min/" , "/full/");
+	document.getElementById("img01").src = null; // Flush prev img plz
+  	document.getElementById("modal01").style.display = "none"; // Flush prev img plz
 	document.getElementById("img01").src = urledit;
 	document.getElementById("modal01").style.display = "block";
 	var captionText = document.getElementById("caption");
