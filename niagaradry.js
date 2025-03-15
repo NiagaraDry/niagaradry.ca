@@ -9,14 +9,22 @@ function closeNav() {
 }
 
 function onClick(element) {
-	var url = element.src;
+	const modal = document.getElementById("modal01");
+	const image = document.getElementById("img01");
+	const caption = document.getElementById("caption");
+
+	// Flush previous img
+	image.style.backgroundImage = "";
+	image.src = "";
+
+	// Set background img for slow loads
+	image.style.backgroundImage = "url(" + element.src + ")";
+
+	// Swap out the min folder for the full folder for the modal img
 	var urledit = element.src.replace("/min/" , "/full/");
-	document.getElementById("img01").style.backgroundImage = ""; // Flush prev img?
-	document.getElementById("img01").src = ""; // Flush prev img plz
-  	document.getElementById("modal01").style.display = "none"; // Flush prev img plz
-	document.getElementById("img01").style.backgroundImage = "url(" + url + ")";
-	document.getElementById("img01").src = urledit;
-	document.getElementById("modal01").style.display = "block";
-	var captionText = document.getElementById("caption");
-	captionText.innerHTML = element.alt;
+	image.src = urledit;
+	caption.innerHTML = element.alt;
+
+	// Show the modal
+	modal.style.display = "block";
 }
