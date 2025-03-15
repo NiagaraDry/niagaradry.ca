@@ -320,6 +320,8 @@ li {
     max-width: 100%;
     height: auto;
     max-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 img {

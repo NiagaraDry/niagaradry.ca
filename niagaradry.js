@@ -9,16 +9,12 @@ function closeNav() {
 }
 
 function onClick(element) {
-	// Grab the src URL and use that as a lazy-loading background
 	var url = element.src;
-	document.getElementById("img01").style.backgroundSize = "cover";
-	document.getElementById("img01").style.backgroundRepeat = "norepeat";
-	document.getElementById("img01").style.backgroundImage = "url(" + url + ")";
-
-	// Do the rest of the shit
 	var urledit = element.src.replace("/min/" , "/full/");
+	document.getElementById("img01").style.backgroundImage = null; // Flush prev img?
 	document.getElementById("img01").src = null; // Flush prev img plz
   	document.getElementById("modal01").style.display = "none"; // Flush prev img plz
+	document.getElementById("img01").style.backgroundImage = "url(" + url + ")";
 	document.getElementById("img01").src = urledit;
 	document.getElementById("modal01").style.display = "block";
 	var captionText = document.getElementById("caption");
