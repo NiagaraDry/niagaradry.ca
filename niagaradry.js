@@ -11,8 +11,8 @@ function closeNav() {
 function onClick(element) {
 	var url = element.src;
 	var urledit = element.src.replace("/min/" , "/full/");
-	document.getElementById("img01").style.backgroundImage = null; // Flush prev img?
-	document.getElementById("img01").src = null; // Flush prev img plz
+	document.getElementById("img01").style.backgroundImage = ""; // Flush prev img?
+	document.getElementById("img01").src = ""; // Flush prev img plz
   	document.getElementById("modal01").style.display = "none"; // Flush prev img plz
 	document.getElementById("img01").style.backgroundImage = "url(" + url + ")";
 	document.getElementById("img01").src = urledit;
