@@ -20,7 +20,7 @@ function onClick(element) {
 	// Set background img for slow loads
 	image.style.backgroundImage = "url(" + element.src + ")";
 	// I'm also going to do this blatantly hacky bullshit to force the img to load
-	image.src = url;
+	image.src = element.src;
 
 	// Swap out the min folder for the full folder for the modal img
 	var urledit = element.src.replace("/min/" , "/full/");
