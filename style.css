@@ -310,7 +310,8 @@ li {
 }
 
 .col img {
-    width: 10%;
+    /* width: 10%; */
+    height: 180px; /* let's try this */
     border: 4px outset var(--gold50);
     border-radius: 4px;
     cursor: pointer;
