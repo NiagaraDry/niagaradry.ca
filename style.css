@@ -223,6 +223,12 @@ body {
     font-weight: bold;
 }
 
+.container hr {
+  border: 2px solid var(--gold50);
+  border-radius: 2px;
+  box-shadow: 0px 2px 8px hsla(0, 0%, 0%, 0.4);
+}
+
 .container p {
     font-size: 0.6em;
 }
