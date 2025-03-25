@@ -281,7 +281,7 @@ li {
     background-color: var(--green30);
     width: 500px;
     margin: 0 auto 4px auto;
-    padding: 4px 8px 2px 8px;
+    padding: 4px 8px 4px 8px;
     border: 4px outset var(--gold50);
     border-radius: 4px;
     font-weight: bold;
