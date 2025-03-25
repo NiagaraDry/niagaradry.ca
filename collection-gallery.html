@@ -51,7 +51,7 @@
     <a href="/collection-gallery.html" onclick="closeNav()" class="bar-item active">Collection Gallery</a>
     <a href="/contact.html" onclick="closeNav()" class="bar-item">Contact Us</a>
   </div>
-    <a href="javascript:void(0)" onclick="closeNav()" class="closeButtonL hide-large">Close Menu</a>
+  <a href="javascript:void(0)" onclick="closeNav()" class="closeButtonL hide-large">Close Menu</a>
 </nav>
 
 <header class="container topbar">
@@ -63,30 +63,21 @@
 
 <div class="main" style="margin-left:300px;">
 
-  <div class="container" id="bottlecaps">
+  <div class="container">
+
     <h1>Collection Galleries</h1>
     <p>This page contains images of people's collections.</p>
-      <!--<h2>Bottle Caps</h2>
-      <p>Sky-Hy went through numerous designs for their bottle caps. Designs include:
-      <ul>
-        <li><b>Standard:</b> A standard design with "Sky-Hy Beverages Registered" and an airplane.</li>
-        <li><b>Variant 1:</b> Flavor-specific designs in blue/white, with white text for the flavor names and "Canada's Finest" written on the lower half of the cap.</li>
-        <li><b>Variant 2:</b> Flavor-specific designs in blue/white, with colored text for the flavor names and "Canada's Finest" written on the lower half of the cap.</li>
-        <li><b>Variant 3:</b> Flavor-specific designs in blue/white, with colored text for the flavor names and "Canada's Finest" written on the lower half of the cap inside a detailed map of Canada.</li>
-        <li><b>Variant 4:</b> Flavor-specific designs in blue/white, with white text for the flavor name(s) and "Canada's Finest" written on the lower half of the cap in white text with a dark background.</li>
-        <li><b>Variant 5:</b> A (possibly flavor-specific) design in silver/red with the flavor name in the red half. <i>I've only seen this cap in Cream Soda</i>.</li>
-      </ul>
-      </p>-->
+
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="closeButton">×</span>
+      <div class="modal-content">
+        <p id="caption"></p>
+        <img id="img01" class="image">
+      </div>
+    </div>
+
   </div>
 
-  <div id="modal01" class="modal" onclick="this.style.display='none'">
-    <span class="closeButton">×</span>
-    <div class="modal-content">
-      <p id="caption"></p>
-      <img id="img01" class="image">
-    </div>
-  </div>
-  
 </div>
 </body>
 </html>
