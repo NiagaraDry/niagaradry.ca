@@ -209,21 +209,16 @@ body {
 }
 
 .container h1 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bolder;
 }
 
 .container h2 {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.container h3 {
     font-size: 1.0em;
     font-weight: bold;
 }
 
-.container h4 {
+.container h3 {
     font-size: 0.8em;
     font-weight: bold;
 }
