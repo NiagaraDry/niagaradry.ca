@@ -1,6 +1,8 @@
 :root {
     --white: hsl(30, 50%, 90%);
     --overlay: hsla(0, 0%, 0%, 0.7);
+    --box-shadow: hsla(0, 0%, 0%, 0.4);
+    --box-shadow-img: hsla(0, 0%, 0%, 0.2);
     
     /* Greens */
     --green10: hsl(164, 32%, 10%);
@@ -139,6 +141,7 @@ body {
     font-size: 18px;
     background-color: var(--green30);
     border-right: 6px solid var(--gold50);
+    box-shadow: 4px 0 4px var(--box-shadow);
 }
 
 .logo {
@@ -224,9 +227,9 @@ body {
 }
 
 .container hr {
-  border: 2px solid var(--gold50);
-  border-radius: 2px;
-  box-shadow: 0px 2px 8px hsla(0, 0%, 0%, 0.4);
+    border: 2px solid var(--gold50);
+    border-radius: 2px;
+    box-shadow: 0px 2px 8px var(--box-shadow);
 }
 
 .container p {
@@ -235,6 +238,11 @@ body {
 
 .container > ul {
     margin-top: 0;
+}
+
+.container.topbar {
+    box-shadow: 0 4px 4px var(--box-shadow);
+    position: relative;
 }
 
 li {
@@ -303,6 +311,7 @@ li {
 .modal-content img {
     border: 4px outset var(--gold50);
     border-radius: 4px;
+    box-shadow: -2px 4px 4px var(--box-shadow-img), 2px 4px 4px var(--box-shadow-img);
 }
 
 .col.m4 {
@@ -326,6 +335,7 @@ li {
     border: 4px outset var(--gold50);
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: -2px 4px 4px var(--box-shadow-img), 2px 4px 4px var(--box-shadow-img);
 }
 
 .image {
