@@ -338,6 +338,11 @@ li {
     box-shadow: -2px 4px 4px var(--box-shadow-img), 2px 4px 4px var(--box-shadow-img);
 }
 
+.col img:hover {
+    border-color: var(--green40);
+    box-shadow: -2px 4px 4px hsla(164, 32%, 40%, 0.4), 2px 4px 4px hsla(164, 32%, 40%, 0.4);
+}
+
 .image {
     max-width: 100%;
     height: auto;
